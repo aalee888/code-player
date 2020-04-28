@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Codeplayer</title>
+</head>
+<body>
+
+  <div id="topBar">
+    <div id="logo">
+      CodePlayer
+    </div>
+    <div id="button-container">
+      <div class="toggleButton active" id="html">HTML</div>
+      <div class="toggleButton" id="css">CSS</div>
+      <div class="toggleButton" id="javascript">Javascript</div>
+      <div class="toggleButton active" id="output">Output</div>
+    </div>
+  </div>
+
+  <div id="bodyContainer">
+    <textarea id="htmlPanel" class="panel"><p id="paragraph">Hello World!</p></textarea>
+    <textarea id="cssPanel" class="panel hidden">p {color: blue};</textarea>
+    <textarea id="javascriptPanel" class="panel hidden">document.getElementById("paragraph").innerHTML = "Hello James!";</textarea>
+    <iframe id="outputPanel" class="panel"></iframe>
+
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
